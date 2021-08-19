@@ -1,0 +1,90 @@
+.CardItem {
+  display: grid;
+  grid-template-columns: 1fr 80px;
+  grid-template-rows: auto 1fr;
+  column-gap: 18px;
+  align-items: start;
+  height: 100%;
+  width: 100%;
+  padding: 36px;
+  border-radius: 24px;
+  transition: all $duration;
+
+  @include onTablet() {
+    padding: 36px 24px;
+  }
+}
+
+.scale {
+  &:hover {
+    transform: scale(1.06);
+
+    @include onTablet() {
+      transform: none;
+    }
+  }
+}
+
+.heading {
+  align-self: end;
+  line-height: 1;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.text {
+  grid-column: 1 / 2;
+  font-size: $fontSizeSmaller;
+}
+
+.image {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.yellow {
+  background-color: #ffea75;
+}
+
+.pink {
+  background-color: #ffaff7;
+}
+
+.blue {
+  background-color: #99e9ff;
+}
+
+.coral {
+  background-color: #ffb6b1;
+}
+
+.green {
+  background-color: #afff8a;
+}
+
+.white {
+  background-color: #f3f5f7;
+}
+
+.purple {
+  background-color: #bbbdff;
+}
+
+.fullText {
+  padding: 24px 36px 36px;
+
+  @include onTablet() {
+    padding: 24px 24px 36px;
+  }
+
+  .image {
+    grid-row: 1 / 2;
+  }
+
+  .text {
+    grid-column: 1 / 3;
+  }
+}

@@ -1,0 +1,145 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.CheckBox {
+  position: relative;
+
+  .label {
+    display: inline-block;
+    position: relative;
+    padding: 4px 12px;
+    font-family: $secondaryFont;
+    font-size: $fontSizeSmaller;
+    line-height: 1.25;
+    text-align: center;
+    color: $textColor;
+    border: 1px solid $textColor;
+    border-radius: 1000px;
+    cursor: pointer;
+    transition: all $duration;
+  }
+
+  &.standart .label {
+    padding: 0;
+    border: none;
+    margin: 0 0 0 8px;
+    font-family: $secondaryFont;
+    font-size: $fontSizeSmaller;
+    color: $textColor;
+    text-align: left;
+  }
+
+  .input {
+    @include visually-hidden();
+
+    &:focus + .label,
+    &:focus-visible + .label {
+      outline: 2px dashed $brandColor;
+    }
+
+    &:checked + .label {
+      color: white;
+      background-color: $textColor;
+    }
+
+    &:focus:not(:focus-visible) + .label {
+      outline: none;
+    }
+
+    &:checked:focus-visible + .label {
+      color: white;
+      background-color: $textColor;
+      outline: 2px dashed $brandColor;
+    }
+  }
+
+  &.standart {
+    display: flex;
+    width: fit-content;
+
+    .check {
+      position: relative;
+      display: inline-block;
+      min-width: 20px;
+      height: 20px;
+      border: 1px solid #999999;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all $duration;
+
+      &::after {
+        position: absolute;
+        content: '';
+        width: 12px;
+        height: 9px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: url("data:image/svg+xml,%3Csvg width='12' height='9' viewBox='0 0 12 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.5 1.5L4.5 7.5L1.5 4.5' stroke='white' stroke-width='2'/%3E%3C/svg%3E")
+          center/contain no-repeat;
+      }
+    }
+
+    .inputError + .check {
+      border: 1px solid $brandColor;
+    }
+
+    .input {
+      @include visually-hidden();
+
+      &:focus + .check,
+      &:focus-visible + .check {
+        border: 1px solid #000000;
+        outline: 2px dashed $brandColor;
+      }
+
+      &:checked + .check {
+        border: 1px solid #000000;
+        background-color: #000000;
+      }
+
+      &.inputError:focus + .check {
+        border: 1px solid $brandColor;
+      }
+
+      &:focus:not(:focus-visible) + .check {
+        outline: none;
+      }
+
+      &:checked:focus-visible + .check {
+        border: 1px solid #000000;
+        background-color: #000000;
+        outline: 2px dashed $brandColor;
+      }
+    }
+  }
+}
+
+.error {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 20px;
+  font-family: $secondaryFont;
+  font-size: $fontSizeSmaller;
+  color: $brandColor;
+  @include animation(fadeIn);
+
+  @include createMediaQuery(450px) {
+    top: 43px;
+  }
+}
+
+.standart {
+  .error {
+    top: auto;
+    bottom: -17px;
+  }
+}

@@ -1,0 +1,42 @@
+.swiper {
+  width: 100%;
+  margin: 0 auto;
+  overflow: visible;
+  position: relative;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+  padding-bottom: 50px;
+
+  @include onTablet() {
+    padding-bottom: 42px;
+  }
+
+  @include onPhone() {
+    padding-bottom: 21px;
+  }
+}
+
+.slide {
+  width: 300px;
+  height: auto;
+  flex-shrink: 0;
+  position: relative;
+  cursor: move;
+  transition-property: transform;
+
+  &:not(:last-child)::before {
+    position: absolute;
+    content: '';
+    width: calc(100% + 68px);
+    height: 2px;
+    top: 39px;
+    background-color: white;
+
+    @include onPhone() {
+      top: 34px;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.Stack {
+  width: 100%;
+  grid-column: 1 / -1;
+  padding-bottom: 113px;
+
+  @include onTablet() {
+    padding-bottom: 73px;
+  }
+
+  @include onPhone() {
+    padding-bottom: 48px;
+  }
+}
+
+.heading {
+  line-height: 1.1;
+  color: white;
+  padding-bottom: 28px;
+  font-size: 44px;
+
+  @include onTablet() {
+    font-size: 40px;
+    padding-bottom: 24px;
+  }
+
+  @include onPhone() {
+    font-size: 28px;
+    padding-bottom: 16px;
+  }
+}

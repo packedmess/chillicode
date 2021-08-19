@@ -1,0 +1,59 @@
+.CardList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(384px, 1fr));
+  gap: 32px;
+
+  @include onTablet() {
+    gap: 28px;
+  }
+
+  @include onPhone() {
+    gap: 16px;
+  }
+}
+
+.swiper {
+  width: 100%;
+  margin: 0 auto;
+  overflow: visible;
+  position: relative;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+  padding-bottom: 50px;
+
+  @include onTablet() {
+    padding-bottom: 42px;
+  }
+
+  @include onPhone() {
+    padding-bottom: 21px;
+  }
+}
+
+.slide {
+  max-width: 384px;
+  height: auto;
+  flex-shrink: 0;
+  position: relative;
+  cursor: move;
+  transition-property: transform;
+}
+
+.fullWidth {
+  .slide {
+    @include onTablet() {
+      width: 708px;
+    }
+  }
+}
+
+.col2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.col3 {
+  grid-template-columns: repeat(3, 1fr);
+}

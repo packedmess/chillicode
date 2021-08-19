@@ -1,0 +1,106 @@
+.form {
+  width: 100%;
+  min-height: 670px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.text {
+  font-family: $secondaryFont;
+  padding: 12px 0;
+  margin-right: 16px;
+  min-width: max-content;
+
+  @include onPhone() {
+    font-size: $fontSizeSmaller;
+    padding: 8px 0;
+    margin-right: 8px;
+  }
+}
+
+.label {
+  @include visually-hidden();
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  margin: 0 8px 28px;
+
+  @include onTablet() {
+    width: 100%;
+    margin: 0 0 16px;
+  }
+}
+
+.checkBoxGroup {
+  flex-wrap: wrap;
+
+  .text {
+    @include onPhone() {
+      width: 100%;
+    }
+  }
+
+  label {
+    margin-right: 4px;
+    margin-bottom: 4px;
+  }
+}
+
+.emailGroup,
+.commentGroup {
+  @include onPhone() {
+    flex-wrap: wrap;
+  }
+
+  .text {
+    @include onPhone() {
+      width: 100%;
+    }
+  }
+}
+
+.fullWidth {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 28px;
+
+  @include onTablet() {
+    margin-bottom: 16px;
+  }
+
+  .text {
+    @include onPhone() {
+      width: 100%;
+    }
+  }
+
+  input {
+    flex-grow: 1;
+  }
+}
+
+.checkbox {
+  flex-grow: 0;
+}
+
+.button {
+  display: block;
+}
+
+.small {
+  display: block;
+  margin: -2px 0 0 8px;
+  font-family: $secondaryFont;
+  font-size: $fontSizeSmaller;
+  color: $textColor;
+}
+
+.legend {
+  @include visually-hidden();
+}

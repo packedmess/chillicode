@@ -1,0 +1,22 @@
+.Tag {
+  display: inline-block;
+  position: relative;
+  font-family: $secondaryFont;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 222px;
+  font-size: $fontSizeSmaller;
+  line-height: 1.2;
+  color: white;
+  padding: 4px 12px;
+}
+
+.white {
+  border: 1px solid white;
+  color: white;
+}
+
+.black {
+  border: 1px solid $textColor;
+  color: $textColor;
+}

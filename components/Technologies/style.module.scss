@@ -1,0 +1,75 @@
+.Technologies {
+  width: 100%;
+  background-color: $textColor;
+  overflow-x: hidden;
+  padding-bottom: 60px;
+
+  @include onTablet() {
+    padding-bottom: 48px;
+  }
+
+  @include onPhone() {
+    padding-bottom: 28px;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  align-items: start;
+  column-gap: 28px;
+  padding-bottom: 20px;
+}
+
+.innerContainer {
+  display: grid;
+  grid-column: 1/-1;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 28px;
+  padding-bottom: 80px;
+
+  @include onPhone() {
+    grid-template-columns: 1fr;
+    padding-bottom: 48px;
+  }
+}
+
+.heading {
+  line-height: 1.1;
+  color: white;
+
+  @include onTablet() {
+    grid-column: 1/-1;
+    padding-bottom: 24px;
+  }
+
+  @include onPhone() {
+    padding-bottom: 16px;
+  }
+}
+
+.text {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  align-items: start;
+  row-gap: 24px;
+  max-width: 488px;
+  color: white;
+  padding-top: 24px;
+
+  @include onTablet() {
+    grid-column: 1/-1;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 28px;
+    row-gap: 0;
+  }
+
+  @include onPhone() {
+    font-size: $fontSizeSmaller;
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+  }
+}

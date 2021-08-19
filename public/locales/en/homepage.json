@@ -1,0 +1,345 @@
+{
+  "intro": {
+    "title1": "We&nbsp;Create",
+    "title2": "",
+    "title3": "Chilli Projects",
+    "text": "We&nbsp;design and develop websites, web-services and mobile applications of&nbsp;various complexity levels up&nbsp;to&nbsp;the highest one.",
+    "button": "Let&rsquo;s talk about your project"
+  },
+  "technologies": {
+    "title1": "Technologies",
+    "title2": "&amp;&nbsp;Stack For Web",
+    "text1": "We&nbsp;prefer reliability: we&nbsp;use popular and well-established open source solutions supported by&nbsp;the Developer Community and sponsored by&nbsp;big companies.",
+    "text2": "We&nbsp;follow the trends: we&nbsp;monitor new tools, update our libraries in&nbsp;order to&nbsp;always keep the highest and latest standards of&nbsp;software development.",
+    "stack": [
+      {
+        "title": "Frontend",
+        "items": [
+          {
+            "label": "ECMAScript",
+            "logoSrc": "/assets/icons/es.svg",
+            "text": "We&nbsp;use the latest features of&nbsp;the ECMAScript standard and good old browsers too.",
+            "color": "yellow"
+          },
+          {
+            "label": "SPA & PWA",
+            "logoSrc": "/assets/icons/spa-pwa.svg",
+            "text": "We&nbsp;create quick one page and progressive web applications using modern React and Vue frameworks.",
+            "color": "pink"
+          },
+          {
+            "label": "React JS",
+            "logoSrc": "/assets/icons/react.svg",
+            "text": "The core of&nbsp;our stacks is&nbsp;to&nbsp;enable the development of&nbsp;complex front-end applications with multiple user interfaces.",
+            "color": "blue"
+          },
+          {
+            "label": "SSR & Next",
+            "logoSrc": "/assets/icons/next.svg",
+            "text": "To optimize the search and speed up page loading, we render applications on the server side using our own template with the necessary ecosystem around React and Next.js.",
+            "color": "coral"
+          },
+          {
+            "label": "Static Site Generation",
+            "logoSrc": "/assets/icons/ssg.svg",
+            "text": "To&nbsp;optimize the search and speed up&nbsp;page loading, we&nbsp;render applications on&nbsp;the server side using our own template with the necessary ecosystem around React and Next.js.",
+            "color": "blue"
+          },
+          {
+            "label": "Node.js",
+            "logoSrc": "/assets/icons/node.svg",
+            "text": "We&nbsp;build chats, bots and other server applications with Node.js.",
+            "color": "green"
+          },
+          {
+            "label": "Headless CMS",
+            "logoSrc": "/assets/icons/cms.svg",
+            "text": "For blogs and corporate sites we&nbsp;use Strapi and Ghost as&nbsp;convenient tools for creating admin panels and forming REST APIs.",
+            "color": "pink"
+          },
+          {
+            "label": "Code Quality Tools",
+            "logoSrc": "/assets/icons/code-tools.svg",
+            "text": "We&nbsp;monitor the quality using static code analyzers such as&nbsp;ESLint, TSLint, Stylelint and Prettier.We maintain the architecture clean by&nbsp;integrating those analyzers into the CI&nbsp;/ CD&nbsp;system.",
+            "color": "coral"
+          },
+          {
+            "label": "Preprocessors and Styles",
+            "logoSrc": "/assets/icons/preprocessors.svg",
+            "text": "For interface design we&nbsp;implement modern SASS and Stylus preprocessors, and we&nbsp;also use JSS and we&nbsp;automate styling routine tasks using PostCSS.",
+            "color": "blue"
+          },
+          {
+            "label": "Autotests",
+            "logoSrc": "/assets/icons/autotests.svg",
+            "text": "​We write integration and unit tests to&nbsp;ensure that the application works correctly throughout the entire development life cycle and we&nbsp;automate the process by&nbsp;implementing them into the CI&nbsp;/ CD&nbsp;system.",
+            "color": "yellow"
+          }
+        ]
+      },
+      {
+        "title": "Backend",
+        "items": [
+          {
+            "label": "Laravel",
+            "logoSrc": "/assets/icons/laravel.svg",
+            "text": "We&nbsp;will promptly create complex and flexible websites and services with an&nbsp;extensible architecture on&nbsp;the popular PHP framework.",
+            "color": "coral"
+          },
+          {
+            "label": "MySQL (MariaDB), PostgreSQL, MongoDB",
+            "logoSrc": "/assets/icons/mysql.svg",
+            "text": "We&nbsp;build a&nbsp;fault-tolerant architecture on&nbsp;high-performance and scalable databases. We&nbsp;guarantee your data will always be&nbsp;ready for issuance and processing, excluding any loss or&nbsp;system inaccessibility.",
+            "color": "blue"
+          },
+          {
+            "label": "Elasticsearch",
+            "logoSrc": "/assets/icons/elasticsearch.svg",
+            "text": "Your users will easily and quickly find all the information they need thanks to&nbsp;the powerful full-text search engine Elasticsearch.",
+            "color": "green"
+          },
+          {
+            "label": "Redis, Memcached",
+            "logoSrc": "/assets/icons/redis.svg",
+            "text": "We&nbsp;provide minimal view delays including the view of&nbsp;complex-calculated content using data caching systems.",
+            "color": "coral"
+          },
+          {
+            "label": "RabbitMQ",
+            "logoSrc": "/assets/icons/rabbit.svg",
+            "text": "RabbitMQ is&nbsp;a&nbsp;message broker that will make all the pending tasks (alerts, data generation or&nbsp;post-processing.",
+            "color": "yellow"
+          },
+          {
+            "label": "Golang",
+            "logoSrc": "/assets/icons/golang.svg",
+            "text": "With this language we&nbsp;realize high-performance services, we&nbsp;write real-time applications and chatbots. Golang allows&nbsp;us to&nbsp;successfully create a&nbsp;scalable microservice architecture that can withstand absolutely any load.",
+            "color": "blue"
+          },
+          {
+            "label": "Code Quality Tools",
+            "logoSrc": "/assets/icons/code-tools.svg",
+            "text": "Auxiliary libraries with their static code analyzers are responsible for the code quality and its PSR standards compliance; they help to&nbsp;check the code for basic errors that affect logic and performance.",
+            "color": "coral"
+          },
+          {
+            "label": "Autotests",
+            "logoSrc": "/assets/icons/autotests.svg",
+            "text": "We&nbsp;cover service business logic with automated tests using testing frameworks such as&nbsp;PHPUnit and Codeception. It&nbsp;guarantees functional efficiency before the release.",
+            "color": "yellow"
+          },
+          {
+            "label": "DevOps",
+            "logoSrc": "/assets/icons/devops.svg",
+            "text": "We&nbsp;monitor system health with autotests and code quality control tools integrated into the DevOps process.",
+            "color": "white"
+          },
+          {
+            "label": "CI/CD",
+            "logoSrc": "/assets/icons/ci-cd.svg",
+            "text": "is&nbsp;the main element in&nbsp;DevOps process that is&nbsp;responsible for running autotests, static code analyzers, containerization and deployment. Docker Swarm Orchestrator allows you to&nbsp;horizontally and vertically scale services, as&nbsp;well as&nbsp;monitor their health and provide detailed reporting on&nbsp;the operation of&nbsp;the entire system.",
+            "color": "green"
+          }
+        ]
+      }
+    ]
+  },
+  "mobileDev": {
+    "title": "Mobile App<br>Development",
+    "subtitle1": "Native Mobile App Development For iOS &amp;&nbsp;Android",
+    "text1": "We&nbsp;offer a&nbsp;full cycle of&nbsp;services necessary for the development of&nbsp;iOS and Android applications, from business analysis of&nbsp;your project idea to&nbsp;development, publication and support of&nbsp;an&nbsp;already published application.",
+    "subtitle2": "Development technologies",
+    "text2": "We&nbsp;support the code on&nbsp;Objective-C and Java, and we&nbsp;tend to&nbsp;use Swift and Kotlin for our new projects for iOS and Android respectively.",
+    "developmentCards": [
+      {
+        "label": "Swift<br>And Kotlin",
+        "logoSrc": "/assets/images/swift.png",
+        "text": "They are modern open source programming languages. Their main features are safety, speed and readability of&nbsp;the code, which let you get a&nbsp;stable and clear code within a&nbsp;reasonable deadline.",
+        "color": "coral"
+      },
+      {
+        "label": "Native<br>Design",
+        "logoSrc": "/assets/images/native-design.png",
+        "text": "At&nbsp;the design and development stages we&nbsp;rely on&nbsp;the platform-holder guidelines, using native&nbsp;UI frameworks and patterns in&nbsp;the interface.",
+        "color": "green"
+      },
+      {
+        "label": "Dependency Injection",
+        "logoSrc": "/assets/images/di.png",
+        "text": "We&nbsp;use Swinject and Dagger, they help to&nbsp;create a&nbsp;modular app architecture and be&nbsp;able to&nbsp;make changes or&nbsp;extend the app functionality very quickly and with minimal effort.",
+        "color": "blue"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Completed<br>Projects",
+    "text": "Over the years we’ve worked with founders, brand- and marketing directors, digital managers and VCs as well as internal teams at emerging and established companies.",
+    "link": "Watch App",
+    "next": "Next case",
+    "feedback": "Feedback",
+    "items": [
+      {
+        "id": 1,
+        "href": null,
+        "label": "Pullquest",
+        "imageSrc": "/assets/images/pullquest/pullquest.jpg",
+        "imageAlt": "Women in dresses",
+        "text": "Онлайн-платформа для общения между стилистами и дизайнерами.",
+        "tags": ["PHP", "Laravel", "Docker", "Elasticsearch", "Redis", "Next.js", "SCSS", "Jest", "AWS"],
+        "link": "https://pullquest.net/",
+        "article": {
+          "heading": "Как Chillicode «поженил» имиджевый стартап и оптовые закупки свадебных платьев",
+          "image": "/assets/images/pullquest/1.jpg",
+          "problem": "In order to collect applications for training, update information on educational organizations, process incoming applications, keep records of study groups, as well as take into account the results of exams and keep records, WorldSkills Russia needed a tool.",
+          "decision": "As part of the rebranding, we also repainted the mobile application. In it appeared all the important elements of the new style: branded cubes of food and a convenient calculator of nutrition programs. ",
+          "workingHours": "7,200+",
+          "content": "<div class='article-content'><p class='intro'>Pullquest — это стартап из Лос-Анджелеса, онлайн-платформа, на которой, с одной стороны, дизайнеры могутразмещать свои концептуальные луки, а с другой, стилисты могут выбирать для своих подопечных селебрити подходящие костюмы для выходов в свет разного уровня от рядовых фотосессий до светских мероприятий масштаба «Грэмми» и «Оскара». Стилистам — экономия времени, сил и денег, а дизайнерам — PR.</p><p class='intro'>К Pullquest обратилась Нью-Йоркская свадебная ассоциация (Bridal Council) с предложением провести осенний показ свадебных мод у них на платформе (в США вовсю бушевала пандемия). Но существующего функционала не хватало.Необходим был глубокий рефакторинг имеющегося кода и новые доработки.</p><h4>Что сделано:</h4><ul><li><p>Настроена архитектура для создания порталов с разным дизайном без изменений бекенда;</p></li><li><p>Портал для проведения онлайн-мероприятия;</p></li><li><p>Лендинг для эксклюзивного приглашения избранных;</p></li><li><p>Разные возможности для разных ролей;</p></li><li><p>Чат;</p></li><li><p>Автоматическое создание и отправка уведомлений;</p></li><li><p>Функция оптового заказа;</p></li><li><p>Индивидуальные ссылки профилей;</p></li><li><p>Возможность делать свои профили публичными;</p></li><li><p>Расширение профиля дизайнера;</p></li><li><p>Инвайты от дизайнеров с упрощенной регистрацией для стилистов;</p></li></ul><h4>Задачи:</h4><ol><li><p>По сути нужен отдельный портал к мероприятию, но не теряющий связи с Pullquest, иначе в чем вообще смысл. Портал с закрытым эксклюзивным доступом. При этом обычный Pullquest должен работать во время ивента штатно и без происшествий.</p></li><li><p>Создать лендинг на Pullquest с анонсом мероприятия.</p></li><li><p>Bridal Council проводит мероприятие не просто так, а чтобы презентовать оптовым закупщикам новые модели. А значит, должен быть разработан функционал оптовых закупок.</p></li><li><p>Обычно в офлайне такие мероприятия сами по себе — отчасти светские тусовки. Нетворкинг является неотъемлемой их частью. Следовательно требуется чат.</p></li></ol><h4>Решения:</h4><ol><li><p>Честно признаемся, у нас на все было всего 5 недель. Создать именно что новый портал без сделок с совестью за такое время мы не можем. Но тяжелые условия рождают изящные решения.</p><p>Мы решили не разделять систему на два отдельных проекта, а лишь масштабировать существующее. Спойлер: теперь у Pullquest есть возможность проводить похожие и даже не очень похожие акции с минимальнойподготовкой. Вносить изменения в бэкенд не надо, но дизайн и даже частично фронтенд могут значительно изменяться.</p><p>В этом нам помогла гибкая система Elasticsearch. С помощью ее умного поиска мы разделяли данные междудвумя платформами с минимальными усилиями. Гибкий движок поисковика с легкостью позволил нам добавить новые критерии для поиска и фильтрования данных с высокой скоростью.</p></li><li><p>В рамках брендбука Bridal Council мы создали на платформе Pullquest лендинг, где центральное место занимает обратный отсчет. Так скажешь кому — засмеют, но это не стереотипный лендинг, где таймер орет о том, что товар или скидки якобы скоро закончатся. Здесь это напоминание о приближении мероприятия.</p><p>На нем же можно было зарегистрироваться, чтобы получить эксклюзивный доступ на мероприятие. В админке же нужно было просто поставить галочку в новом чекбоксе, что позволило легко распределять доступы на эксклюзивный портал и обычный.</p><p>Дизайнер мог отправить инвайт стилисту с упрощенной регистрацией. Дизайнер в настройках своего профиля может сгенерировать ссылку, которая будет действовать 30 дней. Новый человек проходит по ссылке на регистрацию, после которой он сразу может пользоваться всеми благами сервиса Pullqest. Обычный процесс же занимает от 2 часов до 2 дней из-за ручной модерации.</p><div class='image'><img src='/assets/images/pullquest/invite.png' alt='Invite screenshot' /></div></li><li><p>Чтобы на сайте можно было продавать и покупать оптом платья, пришлось добавлять различные роли пользователей и сделать удобное и простое их администрирование. И, конечно же, вести статистику по просмотрам и заказам.</p><div class='image'><img src='/assets/images/pullquest/report.png' alt='Report screenshot' /></div><p>В админпанели мы сделали гибкий редактор пользователя. В нем есть вся доступная информация о пользователе (помним, что это все люди не случайные, так что мы знаем о них достаточно много). Есть возможность скрывать, блокировать, обратно активировать пользователя, назначать ему несколько ролей сразу.</p><div class='image'><img src='/assets/images/pullquest/admin1.png' alt='Admin panel screenshot' /></div><div class='image'><img src='/assets/images/pullquest/admin2.png' alt='Admin panel screenshot' /></div><p>Каждый дизайнер смог создать индивидуальную ссылку на себя вместо базового безликого цифровго айди.</p><div class='image'><img src='/assets/images/pullquest/profile-settings.png' alt='Profile settings screenshot' /></div><p>Также дизайнеры могут сами выбрать, будут ли они продавать свое творение оптом или, как раньше было у Pullquest, предоставлять одежду для имиджевых целей.</p><p>Непосредственно для процесса торговли мы настроили:<ul><li><p>таблицу размеров, с калькулятором стоимости заказа;</p></li><li><p>корзину и оплату через stripe;</p></li><li><p>формирование и отправку почтовых уведомлений по результатам взаимодействия стилистов и дизайнеров;</p></li><li><p>формирование отчетов по просмотрам и заказам.</p></li></ul></p></li><li><p>Для создания чата был использован протокол websocket для отправки сообщений, вложений, ссылок в реальном времени.</p><div class='video'><video controls><source src='/assets/images/pullquest/chat.mp4' type='video/mp4'></video></div><div class='image'><img src='/assets/images/pullquest/red-spot.png' alt='Previous profile screenshot' /></div><p>Красная точка означала, что у есть новые сообщения, а через некоторое время, о непрочитанных сообщениях на почту уходило уведомление с напоминанием.</p></li><li><p>Расширили страничку профиля дизайнера. Раннее страница профиля дизайнера выглядела так:</p><div class='image'><img src='/assets/images/pullquest/profile-before.png' alt='Previous profile screenshot' /></div><p>Фича позволила, сделать полноценный профиль как в соцсети.</p><div class='image'><img src='/assets/images/pullquest/profile-after.png' alt='New profile screenshot' /></div><p>Мы дали возможность делать свои профили публичными. Когда страница профиля стала ухоженной, пользователям захотелось поделиться ей с большим количеством людей. Разумеется, функциональность для незарегистрированных пользователей очень ограничена, но это лишний повод примкнуть к растущему сообществу Pullquest.</p></li></ol><h4>Результаты</h4><ul><li><p>Отчеты для дизайнеров помогли им определить уровень спроса и интереса к их продукции. Репорты стали неотъемлемой частью и классического Pullquest. «По просьбам трудящихся» уже после мероприятия мы увеличили количество доступных отчетов в 2 раза. Данным функционалом пользуется каждый 2-й дизайнер.</p></li><li><p>Оптовая торговля была реализована удачно и поэтому осталась и после свадебной недели, набирает популярность и обрастает новыми фичами.</p></li><li><p>Проект прошел успешно, так что даже засветился в New York Times. Нас по названию хоть и не упомянули, но мы то понимаем, благодаря чьей работе это произошло.</p></li></ul></div>",
+          "feedback": {
+            "title": "Отзыв",
+            "author": "Pullquest",
+            "text": "We design and develop websites, web-services and mobile applications of various complexity levels up to the highest one",
+            "link": "#"
+          }
+        }
+      },
+      {
+        "id": 2,
+        "href": "http://brooke.ru/",
+        "label": "Brooke",
+        "imageSrc": "/assets/images/brooke.jpg",
+        "imageAlt": "Big concert",
+        "text": "Corporate website. For one of the best event - agencies in Moscow, Brooke. Reflects the agency's quality approach to its work and desire for excellence.",
+        "tags": ["ECMAScript", "HTML5"]
+      },
+      {
+        "id": 3,
+        "href": "https://www.behance.net/gallery/89098743/Bariatric-Medical-mobile-app-for-iOS-and-Android",
+        "label": "Bariatric App",
+        "imageSrc": "/assets/images/bariatric.jpg",
+        "imageAlt": "Mobile App Interface",
+        "text": "Mobile application. For one of the actual directions in medicine.",
+        "tags": ["iOS", "Mobile App"]
+      },
+      {
+        "id": 4,
+        "href": "https://www.behance.net/gallery/61775055/Boutique-Watches",
+        "label": "18 Carat",
+        "imageSrc": "/assets/images/18_carat.jpg",
+        "imageAlt": "Crystal",
+        "text": "Internet store. For a network of stores, accessories and jewelry of a premium class.",
+        "tags": ["E-Commerce", "PHP"]
+      },
+      {
+        "id": 5,
+        "href": "https://www.behance.net/gallery/91652335/FC-ROSTOV-BRANDING-WEBSITE",
+        "label": "FC ROSTOVF",
+        "imageSrc": "/assets/images/fc_rostovf.jpg",
+        "imageAlt": "Text 'Yellow blue most powerful' and football player picture",
+        "text": "Website and branding. For fans of the club.",
+        "tags": ["HTML5", "Elasticsearch"]
+      }
+    ],
+    "button": "More project"
+  },
+  "process": {
+    "title": "Principles of&nbsp;Development",
+    "principles": [
+      {
+        "step": "01",
+        "label": "Our Team",
+        "text": "We&nbsp;provide our clients with a&nbsp;well-coordinated team that can realize a&nbsp;project of&nbsp;any complexity. Usually these are 2-4&nbsp;developers, a&nbsp;team leader, QA&nbsp;engineer and a&nbsp;project manager."
+      },
+      {
+        "step": "02",
+        "label": "Project Management",
+        "text": "We&nbsp;use Agile methodology that helps&nbsp;us to&nbsp;organize and coordinate our work effectively with rapidly changing project requirements. We&nbsp;mix Scrum and Kanban in&nbsp;our projects. The whole development process is&nbsp;split into pre-agreed sprints which allows&nbsp;us to&nbsp;divide the tasks into smaller pieces and make the work flexible and transparent."
+      },
+      {
+        "step": "03",
+        "label": "Design",
+        "text": "When we&nbsp;start developing first our team leader plans the architecture of&nbsp;the future application on&nbsp;the first sprint. He&nbsp;builds a&nbsp;solid system framework to&nbsp;avoid any app support issues in&nbsp;the future. It&nbsp;saves some customer costs."
+      },
+      {
+        "step": "04",
+        "label": "Programming",
+        "text": "While programming the project is&nbsp;deployed locally on&nbsp;each developer&rsquo;s computer and is&nbsp;supported by&nbsp;a&nbsp;version control system, making the development controlled and independent."
+      },
+      {
+        "step": "05",
+        "label": "Code Review",
+        "text": "For quality control we&nbsp;build code review into every pull request, then our team leader simply checks the application for meeting the business logic requirements as&nbsp;well as&nbsp;the code readability and architecture. When it&nbsp;is&nbsp;successful the code goes into the stable branch."
+      },
+      {
+        "step": "06",
+        "label": "QA-testing",
+        "text": "To&nbsp;make sure everything is&nbsp;correct, we&nbsp;test the application at&nbsp;every iteration, our tester checks all the possible functional errors and adds them into the report sending the app back to&nbsp;developers&rsquo; review."
+      },
+      {
+        "step": "07",
+        "label": "CI/CD",
+        "text": "Thanks to&nbsp;the configured CI&nbsp;/ CD&nbsp;system, each developer commit to&nbsp;the repository is&nbsp;automatically tested, analyzed and, if&nbsp;possible, corrected immediately. We&nbsp;can assume based on&nbsp;our experience, that CI/CD system saves 10-20% of&nbsp;development time."
+      },
+      {
+        "step": "08",
+        "label": "Documenting code",
+        "text": "When the project is&nbsp;complete or&nbsp;at&nbsp;a&nbsp;certain stage of&nbsp;control sprint we&nbsp;write code documentation to&nbsp;let further developers generations save their time to&nbsp;deploy the project and support&nbsp;it."
+      }
+    ]
+  },
+  "statistic": {
+    "title1": "We&rsquo;ve got how",
+    "title2": "to&nbsp;make great code",
+    "cards": [
+      {
+        "value": "350",
+        "label": "Successfully Completed Projects"
+      },
+      {
+        "value": "8",
+        "label": "Years In&nbsp;IT&nbsp;Industry"
+      },
+      {
+        "value": "25",
+        "label": "People In&nbsp;Our Team"
+      }
+    ]
+  },
+  "contacts": {
+    "title": "Write ChilliCode",
+    "nameText": "Hello, my&nbsp;name&nbsp;is",
+    "name": "Your name",
+    "sphereText": "and i&nbsp;work in&nbsp;sphere",
+    "sphere": "Your sphere",
+    "companyText": "I&nbsp;work in&nbsp;company",
+    "company": "Your company name",
+    "projectText": "I&nbsp;would like to&nbsp;disguss",
+    "website": "Website",
+    "service": "Web-service",
+    "app": "Mobile Application",
+    "budgetText": "Your budget&nbsp;is",
+    "5": "<$5000",
+    "10": "$10 000 – $20 000",
+    "50": "$50 000 – $100 000",
+    "100": ">$100 000",
+    "commentText": "I&nbsp;have a&nbsp;few fords about the project:",
+    "comment": "Your comments",
+    "emailText": "Write the answer to&nbsp;my&nbsp;e-mail",
+    "email": "Your e-mail",
+    "phoneText": "or&nbsp;call&nbsp;me",
+    "phone": "Your phone",
+    "files": "Attach files",
+    "delete": "Delete",
+    "consent": "Consent",
+    "consentText": "By&nbsp;clicking on&nbsp;the button, you consent to&nbsp;the processing of&nbsp;personal data and agree to&nbsp;the privacy policy.",
+    "button": "Send",
+    "required": "Required",
+    "isValidEmail": "It doesn’t seems like an email adress",
+    "isValidPhone": "It doesn’t seems like an phone number",
+    "isValidFile": "We can’t attach files >20 mb",
+    "successThank": "Thank you,",
+    "successText": "We&nbsp;will contact you as&nbsp;soon as&nbsp;possible."
+  },
+  "footer": {
+    "copyright": "Production agency"
+  }
+}

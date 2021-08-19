@@ -1,0 +1,75 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.CookieConsent {
+  position: fixed;
+  bottom: 27px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  z-index: 300;
+  pointer-events: none;
+}
+
+.consent {
+  display: inline-block;
+  position: relative;
+  padding: 14px 37px 14px 60px;
+  background-color: #ffea74;
+  border-radius: 222px;
+  pointer-events: auto;
+  transition: all $duration;
+  @include animation(fadeIn);
+
+  &:before {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 24px;
+    left: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url('#{$publicPath}/assets/images/cookie.png') center no-repeat;
+  }
+}
+
+.active {
+  .consent {
+    background-color: #ffb6b1;
+  }
+}
+
+.text {
+  font-family: $secondaryFont;
+  font-size: $fontSizeSmaller;
+  color: #000;
+  line-height: 1.2;
+}
+
+.button {
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  font-family: inherit;
+  text-align: center;
+  text-decoration: underline;
+  border: none;
+  line-height: 1.2;
+  background: none;
+  cursor: pointer;
+  transition: all $duration;
+
+  @include outline();
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

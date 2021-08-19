@@ -1,0 +1,9 @@
+.TabList {
+  display: flex;
+
+  @include onPhone() {
+    position: absolute;
+    top: 30px;
+    right: 16px;
+  }
+}

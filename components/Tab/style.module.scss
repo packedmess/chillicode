@@ -1,0 +1,46 @@
+.Tab {
+  button {
+    display: inline-block;
+    position: relative;
+    font-family: $secondaryFont;
+    line-height: 1.2;
+    color: $textSecondaryColor;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: all $duration;
+    padding: 0 5px;
+    margin-right: 7px;
+
+    @include outline();
+
+    &:after {
+      position: absolute;
+      content: '/';
+      color: $textSecondaryColor;
+      right: -7px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &.isActive {
+    button {
+      color: white;
+
+      @include onPhone() {
+        color: black;
+      }
+    }
+  }
+
+  &:last-child {
+    button {
+      margin-right: 0;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+}

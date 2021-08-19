@@ -1,0 +1,20 @@
+.MuiDialog-scrollBody {
+  overflow-y: scroll !important;
+}
+
+.MuiDialog-paper {
+  max-width: calc(100% - 60px) !important;
+  margin: 160px 30px !important;
+  border-radius: 24px !important;
+  overflow-y: visible !important;
+
+  @include onTablet() {
+    margin: 80px 30px !important;
+  }
+
+  @include onPhone() {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 65px 0 !important;
+  }
+}

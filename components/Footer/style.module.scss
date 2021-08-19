@@ -1,0 +1,202 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.Footer {
+  width: 100%;
+  background-color: $textColor;
+  font-family: $secondaryFont;
+  font-size: $fontSizeSmaller;
+  color: #b2b2b2;
+  margin-top: -60px;
+
+  @include onTablet() {
+    margin-top: -48px;
+  }
+
+  @include onPhone() {
+    margin-top: -28px;
+  }
+}
+
+.container {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: repeat(2, auto);
+  row-gap: 32px;
+  padding-top: 140px;
+  padding-bottom: 20px;
+
+  @include onTablet() {
+    padding-top: 98px;
+    padding-bottom: 16px;
+  }
+
+  @include onPhone() {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    padding-top: 73px;
+    padding-bottom: 16px;
+    row-gap: 24px;
+  }
+}
+
+.logo {
+  svg {
+    @include onPhone() {
+      width: 148px;
+    }
+  }
+}
+
+.innerContainer {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  border-top: 1px solid #b2b2b2;
+  padding: 28px 0;
+
+  @include onTablet() {
+    grid-template-columns: 1fr;
+    padding: 24px 0;
+    row-gap: 20px;
+  }
+}
+
+.social {
+  margin-right: 88px;
+
+  @include onPhone() {
+    margin-right: 0;
+    grid-column: 1/-1;
+  }
+}
+
+// Safari position hack
+.toTop {
+  position: absolute;
+  top: 139px;
+  z-index: 200;
+  pointer-events: none;
+
+  @include animation(fadeIn);
+
+  @include onTablet() {
+    top: 97px;
+  }
+
+  @include onPhone() {
+    top: 73px;
+  }
+
+  .toTopButton {
+    display: flex;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #333333;
+    pointer-events: auto;
+    transition: background-color $duration;
+
+    @include outline();
+
+    path {
+      transition: all $duration;
+    }
+
+    &:hover {
+      background-color: white;
+
+      path {
+        fill: $textColor;
+      }
+    }
+
+    &:active {
+      background-color: $brandColor;
+
+      path {
+        fill: white;
+      }
+    }
+  }
+
+  &.fixed {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+
+    @include createMediaQuery(1276px) {
+      right: 30px;
+    }
+
+    @include onTablet() {
+      position: absolute;
+      top: 97px;
+      bottom: auto;
+      right: 0;
+      left: 0;
+      height: auto;
+    }
+
+    @include onPhone() {
+      top: 73px;
+    }
+
+    .toTopButton {
+      right: 30px;
+      bottom: 30px;
+
+      @include onTablet() {
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+
+  &.hidden {
+    opacity: 0;
+    visibility: hidden;
+    @include animation(fadeOut);
+  }
+}
+
+.link {
+  color: #b2b2b2;
+  transition: all $duration;
+
+  @include outline();
+
+  &:hover {
+    color: white;
+  }
+
+  &:active {
+    color: $brandColor;
+  }
+}

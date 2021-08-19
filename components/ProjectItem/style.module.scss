@@ -1,0 +1,133 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.heading {
+  display: inline-block;
+  position: relative;
+  font-size: 44px;
+  line-height: 1.1;
+  padding-bottom: 12px;
+  margin-right: 8px;
+  transition: all $duration;
+
+  @include onTablet() {
+    font-size: 40px;
+  }
+
+  @include onPhone() {
+    font-size: 28px;
+    padding-bottom: 8px;
+  }
+}
+
+.headingIcon {
+  position: relative;
+  display: inline-block;
+  top: -4px;
+  opacity: 0;
+  transition: all $duration;
+
+  @include onTablet() {
+    opacity: 1;
+    top: -2px;
+  }
+
+  @include onPhone() {
+    top: 0;
+  }
+
+  path {
+    fill: white;
+    transition: all $duration;
+  }
+}
+
+.ProjectItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  padding: 36px;
+  border: none;
+  background: none;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all $duration;
+  @include animation(fadeIn);
+
+  @include outline();
+
+  @include onTablet() {
+    padding: 36px 24px;
+  }
+
+  @include onPhone() {
+    padding: 24px 16px;
+  }
+
+  &:hover {
+    transform: scale(1.04);
+
+    @include onTablet() {
+      transform: none;
+    }
+
+    .headingIcon {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    .heading {
+      color: $brandColor;
+    }
+
+    .headingIcon {
+      path {
+        fill: $brandColor;
+      }
+    }
+  }
+}
+
+.image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.innerContainer {
+  position: relative;
+  color: white;
+  text-align: start;
+  z-index: 1;
+}
+
+.contentImage {
+  position: relative;
+  width: calc(100% + 103px);
+  margin-left: -44px;
+  padding-bottom: 60px;
+}
+
+.text {
+  line-height: 1.4;
+
+  @include onPhone() {
+    font-size: $fontSizeSmaller;
+  }
+}

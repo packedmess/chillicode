@@ -1,0 +1,317 @@
+.Intro {
+  width: 100%;
+  font-family: $secondaryFont;
+  background-color: transparent;
+  padding-bottom: 120px;
+
+  @include onTablet() {
+    padding-bottom: 100px;
+  }
+
+  @include onPhone() {
+    padding-bottom: 60px;
+  }
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: normal;
+  padding: 18px 0 68px;
+
+  @include createMediaQuery(1160px) {
+    font-size: 100px;
+    padding: 43px 0 50px;
+  }
+
+  @include onPhone() {
+    font-size: 72px;
+    padding: 40px 0 40px;
+  }
+
+  span {
+    position: relative;
+    width: fit-content;
+    font-size: inherit;
+    line-height: 1;
+    letter-spacing: -3.5px;
+  }
+}
+
+.whitePart {
+  color: white;
+
+  span {
+    position: relative;
+    padding-right: 75px;
+
+    @include createMediaQuery(1160px) {
+      padding-right: 47px;
+    }
+
+    @include onPhone() {
+      padding-right: 45px;
+    }
+
+    @include createMediaQuery(360px) {
+      padding-right: 0;
+    }
+
+    &:after {
+      position: absolute;
+      content: '';
+      width: 59px;
+      height: 81px;
+      right: 0;
+      bottom: 55px;
+
+      background: url('#{$publicPath}/assets/icons/star_2.svg') center no-repeat;
+
+      @include createMediaQuery(1160px) {
+        width: 35px;
+        height: 48px;
+        bottom: 30px;
+      }
+
+      @include onPhone() {
+        bottom: 15px;
+      }
+
+      @include createMediaQuery(360px) {
+        display: none;
+      }
+    }
+  }
+
+  span:last-child {
+    display: none;
+  }
+}
+
+.redPart {
+  align-self: flex-end;
+  color: red;
+  padding-left: 141px;
+
+  @include createMediaQuery(1160px) {
+    padding-left: 82px;
+  }
+
+  @include onPhone() {
+    padding-left: 76px;
+  }
+
+  @include createMediaQuery(480px) {
+    align-self: flex-start;
+    padding-left: 0;
+    max-width: 235px;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    width: 121px;
+    height: 121px;
+    left: 0;
+    top: 25px;
+    background: url('#{$publicPath}/assets/icons/chillik_4.svg') center no-repeat;
+
+    @include createMediaQuery(1160px) {
+      width: 70px;
+      height: 70px;
+      top: 16px;
+    }
+
+    @include onPhone() {
+      width: 63px;
+      height: 63px;
+      top: 5px;
+    }
+
+    @include createMediaQuery(480px) {
+      left: 160px;
+      transform: scale(-1, 1);
+    }
+  }
+}
+
+.innerContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  align-items: start;
+  gap: 28px;
+  padding: 24px 32px;
+  background-color: #151515;
+  border-radius: 24px;
+
+  @include onPhone() {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    padding: 24px;
+  }
+}
+
+.image {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  justify-self: center;
+
+  @include onPhone() {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+  }
+}
+
+.text {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  max-width: 335px;
+  font-family: $primaryFont;
+  color: white;
+  align-self: end;
+
+  @include onPhone() {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    max-width: 100%;
+  }
+}
+
+.button {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  justify-self: start;
+
+  @include onPhone() {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    justify-self: center;
+  }
+}
+
+.ru {
+  .heading {
+    padding: 34px 0 82px;
+    font-size: 153px;
+    @include createMediaQuery(1210px) {
+      padding: 43px 0 50px;
+      font-size: 88px;
+    }
+    @include onPhone() {
+      font-size: 64px;
+    }
+  }
+
+  .whitePart {
+    span {
+      @include createMediaQuery(1210px) {
+        padding-right: 47px;
+      }
+
+      &::after {
+        bottom: 45px;
+
+        @include createMediaQuery(1210px) {
+          width: 35px;
+          height: 48px;
+          bottom: 30px;
+        }
+      }
+
+      &:first-child {
+        padding-right: 0;
+
+        &::after {
+          display: none;
+        }
+      }
+
+      &:last-child {
+        display: inline;
+      }
+    }
+
+    @include onPhone() {
+      span {
+        padding-right: 35px;
+
+        &::after {
+          width: 26px;
+          height: 34px;
+          bottom: 20px;
+        }
+      }
+    }
+
+    @include createMediaQuery(488px) {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        &:first-child {
+          padding-right: 35px;
+
+          &::after {
+            display: block;
+            bottom: 10px;
+          }
+        }
+
+        &:last-child {
+          &::after {
+            width: 56px;
+            height: 56px;
+            bottom: 5px;
+            right: -35px;
+            transform: scale(-1, 1);
+            background: url('#{$publicPath}/assets/icons/chillik_4.svg') center no-repeat;
+          }
+        }
+      }
+    }
+
+    @include createMediaQuery(360px) {
+      span {
+        &::after {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .redPart {
+    white-space: nowrap;
+
+    @include createMediaQuery(1210px) {
+      padding-left: 82px;
+
+      &:after {
+        width: 70px;
+        height: 70px;
+        top: 16px;
+      }
+    }
+
+    @include onPhone() {
+      padding-left: 64px;
+
+      &::after {
+        width: 56px;
+        height: 56px;
+        top: 5px;
+      }
+    }
+
+    @include createMediaQuery(488px) {
+      padding-left: 0;
+      align-self: flex-start;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

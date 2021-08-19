@@ -1,0 +1,38 @@
+.Navigation {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+
+  @include onTablet() {
+    width: 100%;
+    align-items: flex-start;
+  }
+}
+
+.navList {
+  display: flex;
+  @include onTablet() {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.navItem {
+  margin: 0 12px;
+
+  @include onTablet() {
+    margin: 0;
+    padding: 24px 30px 24px 0;
+    border-bottom: 1px solid #f3f5f7;
+  }
+
+  @include onPhone() {
+    padding: 16px 90px 16px 0;
+  }
+
+  &:last-child {
+    @include onTablet() {
+      border-bottom: none;
+    }
+  }
+}

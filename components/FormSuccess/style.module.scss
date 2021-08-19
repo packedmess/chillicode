@@ -1,0 +1,47 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.FormSuccess {
+  width: 100%;
+  min-height: 670px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include animation(fadeIn);
+
+  @include onTablet() {
+    min-height: 727px;
+  }
+
+  @include onPhone() {
+    min-height: 819px;
+  }
+}
+
+.image {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.heading {
+  width: 900px;
+  text-align: center;
+  line-height: 1.1;
+  padding-bottom: 16px;
+}
+
+.text {
+  max-width: 414px;
+  font-family: $secondaryFont;
+  font-size: $fontSizeSmaller;
+  color: #333333;
+  text-align: center;
+}

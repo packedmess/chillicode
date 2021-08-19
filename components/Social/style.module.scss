@@ -1,0 +1,35 @@
+.Social {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  @include onPhone() {
+    justify-content: flex-start;
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin: 0 12px;
+}
+
+.iconButton {
+  @include outline();
+
+  path {
+    transition: all $duration;
+  }
+
+  &:hover {
+    path {
+      fill: white;
+    }
+  }
+
+  &:active {
+    path {
+      fill: $brandColor;
+    }
+  }
+}

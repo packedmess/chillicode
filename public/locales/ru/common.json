@@ -1,0 +1,32 @@
+{
+  "cookies": {
+    "textBefore": "Мы&nbsp;собираем файлы cookie. Пожалуйста, ",
+    "textAfter": " или ",
+    "accept": "примите",
+    "decline": "отклоните"
+  },
+  "buttons": {
+    "getInTouch": "Связаться"
+  },
+  "nav": [
+    {
+      "label": "Стек",
+      "link": "Stack"
+    },
+    {
+      "label": "Кейсы",
+      "link": "Cases"
+    },
+    {
+      "label": "Процесс",
+      "link": "Process"
+    },
+    {
+      "label": "О&nbsp;нас",
+      "link": "About"
+    }
+  ],
+  "modal": {
+    "closeButton": "Закрыть"
+  }
+}

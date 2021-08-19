@@ -1,0 +1,53 @@
+.ProjectList {
+  grid-column: 1/-1;
+
+  & > div {
+    & > div:first-child > div:nth-child(2n - 1) {
+      height: 802px;
+
+      @include onTablet() {
+        height: 460px;
+      }
+    }
+
+    & > div:first-child > div:nth-child(2n) {
+      height: 868px;
+
+      @include onTablet() {
+        height: 460px;
+      }
+    }
+
+    & > div:last-child > div:nth-child(2n - 1) {
+      height: 868px;
+
+      @include onTablet() {
+        height: 460px;
+      }
+    }
+
+    & > div:last-child > div:nth-child(2n) {
+      height: 802px;
+
+      @include onTablet() {
+        height: 460px;
+      }
+    }
+  }
+}
+
+.button {
+  grid-column: 1/-1;
+  min-width: 317px;
+  justify-self: center;
+  margin-top: 60px;
+
+  @include onTablet() {
+    margin-top: 48px;
+  }
+
+  @include onPhone() {
+    min-width: 220px;
+    margin-top: 24px;
+  }
+}

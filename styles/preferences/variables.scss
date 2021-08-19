@@ -1,0 +1,21 @@
+// Fonts
+$primaryFont: 'PT Serif';
+$secondaryFont: 'PT Sans';
+$fallbackFont: Arial, Helvetica, sans-serif;
+$fontSize: 20px;
+$fontSizeBigger: 22px;
+$fontSizeSmaller: 16px;
+$lineHeight: 1.4;
+
+// Font weights
+$light: 300;
+$regular: 400;
+$bold: 700;
+$extraBold: 800;
+
+// Durations
+$duration: 0.2s;
+
+// Grid
+$containerWidth: $containerMaxWidth * 1px;
+$containerPaddingDesctop: $paddingDesctop * 1px;

@@ -1,0 +1,152 @@
+.MobileDevelopment {
+  width: 100%;
+  background-color: white;
+  border-radius: 60px 60px 0 0;
+  margin-top: -60px;
+  overflow-x: hidden;
+
+  @include onTablet() {
+    border-radius: 48px 48px 0 0;
+    margin-top: -48px;
+  }
+
+  @include onPhone() {
+    border-radius: 28px 28px 0 0;
+    margin-top: -28px;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
+  padding-top: 120px;
+  padding-bottom: 20px;
+
+  @include onTablet() {
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+
+  @include onPhone() {
+    padding-top: 60px;
+  }
+}
+
+.innerContainerTop {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto 1fr;
+  align-items: start;
+
+  @include onPhone() {
+    grid-template-columns: 1fr;
+  }
+}
+
+.heading {
+  line-height: 1;
+  padding-bottom: 60px;
+
+  @include onTablet() {
+    padding-bottom: 48px;
+  }
+
+  @include onPhone() {
+    grid-column: 1/-1;
+    padding-bottom: 32px;
+  }
+}
+
+.subHeading {
+  line-height: 1.1;
+  padding-bottom: 24px;
+  font-size: 44px;
+
+  @include onTablet() {
+    font-size: 40px;
+  }
+
+  @include onPhone() {
+    font-size: 28px;
+    grid-column: 1/-1;
+    padding-bottom: 16px;
+  }
+}
+
+.textTop {
+  max-width: 440px;
+  padding-bottom: 80px;
+
+  @include onTablet() {
+    max-width: 340px;
+  }
+
+  @include onPhone() {
+    grid-column: 1/-1;
+    max-width: 100%;
+    font-size: $fontSizeSmaller;
+    padding-bottom: 36px;
+  }
+}
+
+.text {
+  max-width: 440px;
+  padding-bottom: 36px;
+
+  @include onTablet() {
+    max-width: 340px;
+  }
+
+  @include onPhone() {
+    max-width: 100%;
+    font-size: $fontSizeSmaller;
+    padding-bottom: 16px;
+  }
+}
+
+.image {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  justify-self: center;
+  width: 310px;
+  height: 641px;
+  margin-bottom: 40px;
+
+  @include onTablet() {
+    width: 222px;
+    height: 459px;
+    margin-top: 20px;
+  }
+
+  @include onPhone() {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    margin-top: 0;
+    margin-bottom: 36px;
+  }
+}
+
+.innerContainer {
+  width: 100%;
+  grid-column: 1 / 3;
+  padding-bottom: 120px;
+
+  @include onTablet() {
+    padding-bottom: 100px;
+  }
+
+  @include onPhone() {
+    padding-bottom: 60px;
+  }
+}
+
+.cardList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
+}
+
+.service {
+  display: none;
+}

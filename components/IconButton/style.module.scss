@@ -1,0 +1,10 @@
+.IconButton {
+  display: inline-block;
+  position: relative;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: all $duration;
+
+  @include outline();
+}

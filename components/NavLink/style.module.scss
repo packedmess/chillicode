@@ -1,0 +1,92 @@
+.Link {
+  display: inline-block;
+  position: relative;
+  font-family: $secondaryFont;
+  font-size: $fontSize;
+  line-height: 1.2;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: all $duration;
+
+  @include onTablet() {
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  @include onPhone() {
+    font-size: 28px;
+  }
+
+  @include outline();
+
+  &:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    left: 0;
+    top: calc(#{$fontSize} + 20%);
+    opacity: 0;
+    transition: all $duration;
+  }
+}
+
+.primary {
+  color: white;
+
+  @include onTablet() {
+    color: $textColor;
+  }
+
+  &:hover {
+    color: white;
+
+    @include onTablet() {
+      color: $textColor;
+    }
+
+    &:after {
+      background: white;
+      opacity: 1;
+
+      @include onTablet() {
+        opacity: 0;
+      }
+    }
+  }
+
+  &:active {
+    color: $brandColor;
+
+    &:after {
+      opacity: 0;
+    }
+  }
+}
+
+.secondary {
+  color: $textSecondaryColor;
+
+  &:hover {
+    color: $textSecondaryColor;
+
+    &:after {
+      background: $textSecondaryColor;
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    color: $textSecondaryColor;
+
+    &:after {
+      opacity: 0;
+    }
+  }
+}
+
+.active {
+  color: $brandColor;
+}

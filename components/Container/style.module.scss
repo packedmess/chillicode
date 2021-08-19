@@ -1,0 +1,10 @@
+.Container {
+  width: 100%;
+  max-width: calc(#{$containerWidth} + #{$containerPaddingDesctop} * 2);
+  margin: 0 auto;
+  padding: 0 30px;
+
+  @include onPhone() {
+    padding: 0 16px;
+  }
+}

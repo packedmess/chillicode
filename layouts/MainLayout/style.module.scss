@@ -1,0 +1,7 @@
+.MainLayout {
+  background: radial-gradient(circle at calc(50% + 900px) -800px, #e11f26 0, #000000 1300px);
+
+  @include onTablet() {
+    background: radial-gradient(circle at calc(50% + 500px) -600px, #e11f26 0, #000000 1000px);
+  }
+}

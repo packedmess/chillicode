@@ -1,0 +1,290 @@
+.Article {
+  max-width: 1008px;
+  padding: 48px 44px 80px;
+
+  @include onTablet() {
+    padding: 40px 36px;
+  }
+
+  @include onPhone() {
+    padding: 28px 16px;
+  }
+}
+
+.heading {
+  line-height: 1.15;
+}
+
+.tagList {
+  padding-bottom: 60px;
+
+  @include onTablet() {
+    padding-bottom: 40px;
+  }
+
+  @include onTablet() {
+    padding-bottom: 36px;
+  }
+}
+
+.image {
+  position: relative;
+  width: calc(100% + 44px * 2);
+  margin-left: -44px;
+  margin-bottom: 60px;
+  padding-top: 67.8%;
+
+  @include onTablet() {
+    width: calc(100% + 36px * 2);
+    margin-left: -36px;
+    margin-bottom: 40px;
+  }
+
+  @include onPhone() {
+    width: calc(100% + 16px * 2);
+    margin-left: -16px;
+    margin-bottom: 36px;
+  }
+}
+
+.problemHeading {
+  display: inline-block;
+  position: relative;
+  padding-right: 75px;
+
+  @include onPhone() {
+    padding-right: 67px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 54px;
+    height: 48px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: url('#{$publicPath}/assets/icons/chillik_7.svg') center no-repeat;
+  }
+}
+
+.decisionHeading {
+  display: inline-block;
+  position: relative;
+  padding-right: 65px;
+
+  @include onPhone() {
+    padding-right: 60px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 44px;
+    height: 44px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: url('#{$publicPath}/assets/icons/chillik_4.svg') center/contain no-repeat;
+  }
+}
+
+.paragraph {
+  padding-bottom: 60px;
+
+  @include onTablet() {
+    padding-bottom: 40px;
+  }
+
+  @include onPhone() {
+    font-size: $fontSizeSmaller;
+    padding-bottom: 36px;
+  }
+}
+
+.workingHours {
+  position: relative;
+  padding: 137px 0;
+  margin-bottom: 60px;
+
+  @include onTablet() {
+    padding: 117px 0;
+    margin-bottom: 40px;
+  }
+
+  @include onPhone() {
+    padding: 114px 0;
+    margin-bottom: 36px;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 57px;
+    height: 77px;
+    top: 0;
+    left: 0;
+    background: url('#{$publicPath}/assets/icons/star.svg') center/contain no-repeat;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 57px;
+    height: 77px;
+    bottom: 0;
+    left: 0;
+    background: url('#{$publicPath}/assets/icons/vector.svg') center/contain no-repeat;
+  }
+}
+
+.feedback {
+  margin-top: 60px;
+}
+
+.content {
+  @include onPhone() {
+    font-size: $fontSizeSmaller;
+  }
+
+  h4 {
+    font-family: $secondaryFont;
+    font-size: 44px;
+    font-weight: $bold;
+    margin-top: 60px;
+    margin-bottom: 24px;
+
+    @include onTablet() {
+      font-size: 40px;
+      margin-top: 48px;
+      margin-bottom: 16px;
+    }
+
+    @include onPhone() {
+      font-size: 28px;
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+  }
+
+  img,
+  video {
+    max-width: none;
+    width: calc(100% + 44px * 2);
+    margin-left: calc(-44px);
+
+    @include onTablet() {
+      margin-bottom: 16px;
+    }
+
+    @include onPhone() {
+      margin-bottom: 12px;
+    }
+  }
+
+  p {
+    margin-bottom: 24px;
+
+    @include onTablet() {
+      margin-bottom: 16px;
+    }
+
+    @include onPhone() {
+      margin-bottom: 12px;
+    }
+
+    img,
+    video {
+      max-width: none;
+      width: calc(100% + 44px * 2);
+      margin-left: calc(-44px);
+
+      @include onTablet() {
+        margin-bottom: 16px;
+      }
+
+      @include onPhone() {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  ul,
+  ol {
+    margin-bottom: 24px;
+    padding-left: 24px;
+
+    @include onTablet() {
+      margin-bottom: 16px;
+    }
+
+    @include onPhone() {
+      margin-bottom: 12px;
+    }
+
+    p {
+      img,
+      video {
+        width: calc(100% + 44px * 2 + 24px);
+        margin-left: calc(-44px - 24px);
+        margin-top: 24px;
+
+        @include onTablet() {
+          width: calc(100% + 36px * 2 + 24px);
+          margin-left: calc(-36px - 24px);
+          margin-top: 16px;
+        }
+
+        @include onPhone() {
+          width: calc(100% + 16px * 2 + 24px);
+          margin-left: calc(-16px - 24px);
+          margin-top: 12px;
+        }
+      }
+    }
+  }
+
+  ul {
+    & > li {
+      list-style: disc;
+    }
+  }
+
+  ol {
+    & > li {
+      list-style: decimal;
+    }
+  }
+}
+
+.link {
+  width: 100%;
+  margin-bottom: 16px;
+  border: 1px solid $textColor;
+
+  @include onTablet() {
+    font-size: 20px;
+    padding: 8px 28px;
+  }
+
+  @include onPhone() {
+    margin-bottom: 12px;
+  }
+
+  &:hover {
+    border: 1px solid $brandColor;
+  }
+
+  &:active {
+    border: 1px solid $brandSecondaryColor;
+  }
+}
+
+.button {
+  width: 100%;
+
+  @include onTablet() {
+    font-size: 20px;
+    padding: 8px 28px;
+  }
+}

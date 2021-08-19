@@ -1,0 +1,18 @@
+.Paragraph {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 1.4;
+  font-weight: inherit;
+}
+
+.gutterBottom {
+  @include addTextMargin(24px);
+
+  @include onTablet() {
+    @include addTextMargin(16px);
+  }
+
+  @include onPhone() {
+    @include addTextMargin(12px);
+  }
+}

@@ -1,0 +1,21 @@
+// Load fonts
+@include webfont(
+  $secondaryFont,
+  '#{$publicPath}/assets/fonts/PT/PTSans-Regular.woff',
+  '#{$publicPath}/assets/fonts/PT/PTSans-Regular.woff2',
+  $regular
+);
+
+@include webfont(
+  $secondaryFont,
+  '#{$publicPath}/assets/fonts/PT/PTSans-Bold.woff',
+  '#{$publicPath}/assets/fonts/PT/PTSans-Bold.woff2',
+  $bold
+);
+
+@include webfont(
+  $primaryFont,
+  '#{$publicPath}/assets/fonts/PT/PTSerif-Regular.woff',
+  '#{$publicPath}/assets/fonts/PT/PTSerif-Regular.woff2',
+  $bold
+);

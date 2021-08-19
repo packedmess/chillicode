@@ -1,0 +1,71 @@
+.Contact {
+  position: relative;
+  width: 100%;
+  background-color: white;
+  border-radius: 0 0 60px 60px;
+  z-index: 1;
+
+  @include onTablet() {
+    border-radius: 0 0 48px 48px;
+  }
+
+  @include onPhone() {
+    border-radius: 0 0 28px 28px;
+  }
+}
+
+.container {
+  padding-bottom: 140px;
+
+  @include onTablet() {
+    padding-bottom: 100px;
+  }
+
+  @include onPhone() {
+    padding-bottom: 60px;
+  }
+}
+
+.heading {
+  position: relative;
+  font-size: 172px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: $brandColor;
+  text-align: center;
+  padding-bottom: 140px;
+  margin-bottom: 50px;
+
+  @include onTablet() {
+    font-size: 100px;
+    padding-bottom: 113px;
+    margin-bottom: 30px;
+  }
+
+  @include onPhone() {
+    font-size: 72px;
+    padding-bottom: 97px;
+    margin-bottom: 22px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 48px;
+    height: 132px;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    background: url('#{$publicPath}/assets/icons/vector.svg') center/contain no-repeat;
+
+    @include onTablet() {
+      width: 32px;
+      height: 89px;
+    }
+
+    @include onPhone() {
+      width: 28px;
+      height: 77px;
+    }
+  }
+}

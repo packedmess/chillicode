@@ -1,0 +1,65 @@
+.Quote {
+  width: 100%;
+  padding: 36px;
+  text-align: center;
+  background: #f3f5f7;
+  border-radius: 24px;
+  margin-bottom: 60px;
+
+  @include onTablet() {
+    margin-bottom: 40px;
+  }
+
+  @include onPhone() {
+    padding: 28px;
+    margin-bottom: 36px;
+  }
+}
+
+.author {
+  display: inline-block;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: $secondaryFont;
+  font-size: $fontSizeBigger;
+  text-transform: uppercase;
+  padding-bottom: 24px;
+
+  @include onPhone() {
+    font-size: $fontSize;
+    padding-bottom: 16px;
+  }
+}
+
+.text {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 28px;
+
+  @include onPhone() {
+    font-size: $fontSizeSmaller;
+    padding-bottom: 20px;
+  }
+}
+
+.link {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: $secondaryFont;
+  font-size: $fontSizeBigger;
+  text-decoration: underline;
+  color: $brandColor;
+  transition: all $duration;
+
+  @include outline();
+
+  @include onPhone() {
+    font-size: $fontSize;
+  }
+
+  &:hover,
+  &:active {
+    text-decoration: underline;
+    color: $brandSecondaryColor;
+  }
+}

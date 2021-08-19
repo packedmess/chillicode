@@ -1,0 +1,75 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.label {
+  @include visually-hidden();
+}
+
+.inputContainer {
+  position: relative;
+  width: 227px;
+
+  @include onTablet() {
+    flex-grow: 1;
+  }
+}
+
+.input {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 0;
+  font-family: $secondaryFont;
+  text-align: center;
+  color: $textColor;
+  background: none;
+  border: none;
+  border-bottom: 1px solid $textSecondaryColor;
+  transition: all $duration;
+
+  @include onPhone() {
+    font-size: $fontSizeSmaller;
+    padding: 8px 0;
+  }
+
+  &::placeholder {
+    color: $textSecondaryColor;
+  }
+
+  &:not([value='']) {
+    border-bottom: 1px solid $textColor;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+    color: $textColor;
+    border-bottom: 1px solid $textColor;
+  }
+}
+
+.inputError {
+  color: $brandColor;
+  border-bottom: 1px solid $brandColor;
+
+  &:not([value='']) {
+    border-bottom: 1px solid $brandColor;
+  }
+}
+
+.error {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 100%;
+  font-family: $secondaryFont;
+  font-size: $fontSizeSmaller;
+  color: $brandColor;
+  @include animation(fadeIn);
+}

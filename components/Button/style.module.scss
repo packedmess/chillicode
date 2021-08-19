@@ -1,0 +1,81 @@
+.Button {
+  display: inline-block;
+  position: relative;
+  font-family: $secondaryFont;
+  text-align: center;
+  border: none;
+  border-radius: 222px;
+  line-height: 1;
+  cursor: pointer;
+  transition: all $duration;
+
+  @include outline();
+
+  &:disabled {
+    background-color: #f3f5f7;
+    color: $textSecondaryColor;
+  }
+}
+
+.primary {
+  color: white;
+  background-color: $brandColor;
+
+  &:hover,
+  &:active {
+    background-color: $brandSecondaryColor;
+
+    &:disabled {
+      background-color: #f3f5f7;
+      color: $textSecondaryColor;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.secondary {
+  color: #000;
+  background-color: $bgColor;
+
+  &:hover {
+    color: white;
+    background-color: $brandColor;
+  }
+
+  &:active {
+    color: white;
+    background-color: $brandSecondaryColor;
+  }
+
+  &:hover:disabled {
+    background-color: #f3f5f7;
+    color: $textSecondaryColor;
+  }
+
+  &:active:disabled {
+    background-color: #f3f5f7;
+    color: $textSecondaryColor;
+  }
+}
+
+.small {
+  padding: 6px 20px;
+  font-size: $fontSize;
+  font-weight: $regular;
+
+  @include onTablet() {
+    padding: 4px 20px;
+    font-size: $fontSizeSmaller;
+  }
+}
+
+.large {
+  padding: 10px 28px;
+  font-size: $fontSizeBigger;
+  font-weight: $bold;
+
+  @include onTablet() {
+    padding: 8px 20px;
+    font-size: $fontSize;
+  }
+}

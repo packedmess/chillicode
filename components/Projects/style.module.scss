@@ -1,0 +1,81 @@
+.Projects {
+  width: 100%;
+  background-color: $textColor;
+  border-radius: 60px 60px 0 0;
+  margin-top: -60px;
+  padding-bottom: 60px;
+
+  @include onTablet() {
+    border-radius: 48px 48px 0 0;
+    margin-top: -48px;
+    padding-bottom: 48px;
+  }
+
+  @include onPhone() {
+    border-radius: 28px 28px 0 0;
+    margin-top: -28px;
+    padding-bottom: 28px;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  align-items: start;
+  column-gap: 32px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  @include onTablet() {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    grid-template-columns: 1fr;
+  }
+
+  @include onPhone() {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.innerContainer {
+  display: grid;
+  grid-column: 1/-1;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 32px;
+  padding-bottom: 80px;
+
+  @include onTablet() {
+    grid-template-columns: 1fr;
+    padding-bottom: 48px;
+  }
+}
+
+.heading {
+  line-height: 1;
+  color: white;
+
+  @include onTablet() {
+    padding-bottom: 24px;
+  }
+
+  @include onPhone() {
+    padding-bottom: 16px;
+  }
+}
+
+.text {
+  max-width: 488px;
+  padding-top: 24px;
+  color: white;
+  align-self: center;
+
+  @include onTablet() {
+    padding-top: 0;
+  }
+
+  @include onPhone() {
+    font-size: $fontSizeSmaller;
+  }
+}

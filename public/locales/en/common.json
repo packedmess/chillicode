@@ -1,0 +1,32 @@
+{
+  "cookies": {
+    "textBefore": "Our site uses cookies, please ",
+    "textAfter": " or ",
+    "accept": "accept",
+    "decline": "decline"
+  },
+  "buttons": {
+    "getInTouch": "Get in&nbsp;touch"
+  },
+  "nav": [
+    {
+      "label": "Stack",
+      "link": "Stack"
+    },
+    {
+      "label": "Cases",
+      "link": "Cases"
+    },
+    {
+      "label": "Process",
+      "link": "Process"
+    },
+    {
+      "label": "About",
+      "link": "About"
+    }
+  ],
+  "modal": {
+    "closeButton": "Close"
+  }
+}

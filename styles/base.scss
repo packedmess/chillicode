@@ -1,0 +1,48 @@
+/*--------------------------------------------------------------
+# Global app styles
+--------------------------------------------------------------*/
+// Common styles
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-width: 320px;
+  height: 100%;
+  background: $bgColor;
+  color: $textColor;
+  font: {
+    weight: $regular;
+    size: $fontSize;
+    family: $primaryFont, $fallbackFont;
+  }
+  line-height: $lineHeight;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  @include link($linkColor, $linkColorActive);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  display: block;
+}
+
+.sectionsWrapper {
+  padding-bottom: 60px;
+  background-color: white;
+
+  @include onTablet() {
+    padding-bottom: 48px;
+  }
+
+  @include onPhone() {
+    padding-bottom: 28px;
+  }
+}
